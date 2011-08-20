@@ -1,0 +1,13 @@
+# Set up custom ErrorDocument for 404 pages
+ErrorDocument 404 /404.php
+ErrorDocument 403 /404.php
+
+# Disallow access to .git directory
+RewriteEngine On
+RewriteRule "^(.*/)?\.git/" - [F,L]
+
+# Disallow access to dot-files
+<Files ~ "^\.">
+Order allow,deny
+deny from all
+</Files>

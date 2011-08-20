@@ -1,0 +1,28 @@
+<IfModule mod_autoindex.c>
+	IndexOptions FancyIndexing 
+	IndexOptions XHTML
+	IndexOptions HTMLTable 
+	IndexOptions FoldersFirst 
+	IndexOptions IgnoreCase 
+
+	IndexOptions SuppressHTMLPreamble
+	IndexOptions SuppressLastModified
+	IndexOptions SuppressSize
+	IndexOptions SuppressIcon
+
+	IndexOptions NameWidth=*
+	IndexOptions DescriptionWidth=*
+
+	IndexOrderDefault Descending Name
+
+	IndexIgnore ..
+	IndexIgnore footer.html
+	IndexIgnore header.html
+
+	HeaderName header.html
+	ReadmeName footer.html
+</IfModule>
+
+<IfModule mod_autoindex.c>
+	AddDescription "An SWF applet designed to make HTTP requests and extract contents from the responses. Useful for demonstrating Flash CSRF vulnerabilities." swf-csrf
+</IfModule>
