@@ -17,10 +17,17 @@ if (!defined('SITE_ROOT'))
 		img { border: 0; }
 		h1 { font-size: 2em; text-align: center; margin: 0; padding: 0 0 .25em 0; }
 		h2 { font-size: 1.5em; text-align: center; margin: 0; padding: .25em 0 .25em 0; }
+
 		#container { width: 700px; background-color: #BBB; padding: .5em 2em; margin: 1em auto;
 				border: 2px solid #888; border-radius: 25px; -moz-border-radius: 25px;
 				-moz-box-shadow: 10px 10px 5px #888; -webkit-box-shadow: 10px 10px 5px #888; box-shadow: 10px 10px 5px #888; }
 		#container img { display: block; margin-left: auto; margin-right: auto; }
+
+		#container table { margin-top: 10px; margin-bottom: 40px; }
+		#container table th, #container table td { padding: 5px; }
+		#container table thead tr { background-color: #FFF; }
+		#container table tbody tr:nth-child(odd) { background-color: #EEE; }
+		#container table tbody tr:nth-child(even) { background-color: #DDD; }
 		</style>
 	</head>
 	<body>

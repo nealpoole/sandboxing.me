@@ -2,4 +2,5 @@
 	SetEnv INDEX_TITLE "Tools"
 
 	AddDescription "An SWF applet designed to make HTTP requests and extract contents from the responses. Useful for demonstrating Flash CSRF vulnerabilities." swf-csrf
+	AddDescription "A simple table that displays overlong UTF-8 encodings for ASCII characters." overlong-utf-8
 </IfModule>
