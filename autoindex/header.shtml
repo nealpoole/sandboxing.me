@@ -1,13 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 	<head> 
-		<title>sandboxing.me</title> 
+		<title>sandboxing.me / <!--#echo var="INDEX_TITLE"--></title> 
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" /> 
 		<link href="/favicon.ico" rel="shortcut icon" /> 
-		<script>
-			var path = decodeURI(document.location.pathname);
-			document.title = document.domain + ' : ' + path;
-		</script> 
 		<style type="text/css">
                 body { background-color: #C0D9D9; font-family: Georgia; font-size: 18px; }
                 img { border: 0; }
@@ -23,5 +19,5 @@
 	</head> 
 	<body> 
     	<div id="container"> 
-		<h1>Tools Index</h1>
+			<h1><!--#echo var="INDEX_TITLE"--></h1>
 			<div id="files"> 

@@ -11,3 +11,29 @@ RewriteRule "^(.*/)?\.git/" - [F,L]
 Order allow,deny
 deny from all
 </Files>
+
+# Set up autoindex stuff
+<IfModule mod_autoindex.c>
+	IndexOptions FancyIndexing
+
+	IndexOptions XHTML
+	IndexOptions HTMLTable
+	IndexOptions FoldersFirst
+	IndexOptions IgnoreCase
+
+	IndexOptions SuppressHTMLPreamble
+	IndexOptions SuppressLastModified
+	IndexOptions SuppressSize
+	IndexOptions SuppressIcon
+	IndexOptions SuppressColumnSorting
+
+	IndexOptions NameWidth=*
+	IndexOptions DescriptionWidth=*
+
+	IndexOrderDefault Descending Name
+
+	IndexIgnore ..
+
+	HeaderName /autoindex/header.shtml
+	ReadmeName /autoindex/footer.shtml
+</IfModule>
