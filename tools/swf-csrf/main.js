@@ -134,7 +134,11 @@ function handleInitialSetup()
 			var typeStart = curInput.indexOf('[', curInput.indexOf(']')) + 1;
 			var typeEnd = curInput.indexOf(']', typeStart);
 			var inputType = curInput.substr(typeStart, typeEnd - typeStart);
-			var inputValue = curInput.split('=')[1];
+
+			// We only remove content before the first equals sign, since that's our key.
+			var inputValue = curInput.split('=');
+			inputValue.shift();
+			 inputValue = inputValue.join('=');
 
 			switch (inputType)
 			{
