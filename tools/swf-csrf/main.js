@@ -112,7 +112,7 @@ function handleInitialSetup()
 
 		for (var i = 0; i < inputArray.length; ++i)
 		{
-			var curInput = decodeURIComponent(inputArray[i].replace('+', ' '));
+			var curInput = decodeURIComponent(inputArray[i].replace(/\+/g, ' '));
 
 			if (curInput.split('=')[0] == 'swf_url')
 			{
